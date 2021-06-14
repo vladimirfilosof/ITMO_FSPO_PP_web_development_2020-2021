@@ -215,6 +215,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           feedback
@@ -230,19 +232,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#feedback" class="md-nav__link">
-    Feedback
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -359,19 +356,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#feedback" class="md-nav__link">
-    Feedback
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -393,54 +385,8 @@
               
                 
                 
-                <h3 id="feedback">Feedback</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Primary key</th>
-<th>Foreign key</th>
-<th>Unique</th>
-<th>Inregrity constraints</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>int</td>
-<td>+</td>
-<td></td>
-<td>+</td>
-<td></td>
-</tr>
-<tr>
-<td>user</td>
-<td>int</td>
-<td></td>
-<td>user.id</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>service</td>
-<td>int</td>
-<td></td>
-<td>service.id</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>text</td>
-<td>text</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h1 id="_1">Код модели</h1>
+                <h1 id="feedback">Feedback</h1>
+<h2 id="_1">Код модели</h2>
 <pre><code class="language-python">class Feedback(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True)
     service = models.ForeignKey(Service, on_delete=models.SET_NULL, null=True)
