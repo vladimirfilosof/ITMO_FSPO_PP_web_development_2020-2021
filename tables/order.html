@@ -387,7 +387,7 @@
                 
                 <h1 id="order">Order</h1>
 <h2 id="_1">Код модели</h2>
-<pre><code class="language-python">class Order(models.Model):
+<pre><code class="language-python">class Order(models.Model): # Модель заказа
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     status = models.CharField(max_length=255)

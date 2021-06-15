@@ -387,7 +387,7 @@
                 
                 <h1 id="feedback">Feedback</h1>
 <h2 id="_1">Код модели</h2>
-<pre><code class="language-python">class Feedback(models.Model):
+<pre><code class="language-python">class Feedback(models.Model): # Модель отзыва
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True)
     service = models.ForeignKey(Service, on_delete=models.SET_NULL, null=True)
     text = models.TextField()
