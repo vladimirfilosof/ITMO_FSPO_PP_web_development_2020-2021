@@ -500,49 +500,164 @@
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить список проектов</li>
-<li>post - создать проект</li>
+<li>
+<p>post - создать проект</p>
+<ul>
+<li>
+<p>Request:</p>
+<ul>
+<li>title</li>
+<li>description</li>
+<li>preview</li>
+<li>project_url</li>
+<li>code_url</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="projectsid"><code>/projects/:id/</code></h2>
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить проект</li>
-<li>update - изменить проект </li>
-<li>patch - изменить проект</li>
+<li>
+<p>update - изменить проект </p>
+<ul>
+<li>
+<p>Request:</p>
+<ul>
+<li>title</li>
+<li>description</li>
+<li>preview</li>
+<li>project_url</li>
+<li>code_url</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>patch - изменить проект</p>
+<ul>
+<li>
+<p>Optional request:</p>
+<ul>
+<li>title</li>
+<li>description</li>
+<li>preview</li>
+<li>project_url</li>
+<li>code_url</li>
 <li>delete - удалить проект</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="services"><code>/services/</code></h2>
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить список услуг</li>
-<li>post - создать услугу</li>
+<li>post - создать услугу<ul>
+<li>
+<p>Request:</p>
+<ul>
+<li>title</li>
+<li>description</li>
+<li>text</li>
+<li>preview</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="servicesid"><code>/services/:id/</code></h2>
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить услугу</li>
-<li>update - изменить услугу</li>
-<li>patch - изменить услугу</li>
-<li>delete - удалить услугу</li>
+<li>
+<p>update - изменить услугу</p>
+<ul>
+<li>Request:<ul>
+<li>title</li>
+<li>description</li>
+<li>text</li>
+<li>preview</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>patch - изменить услугу</p>
+<ul>
+<li>Optional request:<ul>
+<li>title</li>
+<li>description</li>
+<li>text</li>
+<li>preview</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>delete - удалить услугу</p>
+</li>
 </ul>
 <h2 id="orders"><code>/orders/</code></h2>
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить список заказов</li>
-<li>post - создать заказ</li>
+<li>post - создать заказ<ul>
+<li>Request:<ul>
+<li>user</li>
+<li>service</li>
+<li>status</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="ordersid"><code>/orders/:id/</code></h2>
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить заказ</li>
-<li>update - изменить заказ</li>
-<li>patch - изменить заказ</li>
-<li>delete - удалить заказ</li>
+<li>
+<p>update - изменить заказ</p>
+<ul>
+<li>Request:<ul>
+<li>user</li>
+<li>service</li>
+<li>status</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>patch - изменить заказ</p>
+<ul>
+<li>Option request:<ul>
+<li>user</li>
+<li>service</li>
+<li>status</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>delete - удалить заказ</p>
+</li>
 </ul>
 <h2 id="feedbacks"><code>/feedbacks/</code></h2>
 <p>Доступные методы:</p>
 <ul>
 <li>get - получить список отзывов</li>
-<li>post - создать отзывов</li>
+<li>post - создать отзывов<ul>
+<li>Request:<ul>
+<li>user</li>
+<li>service</li>
+<li>text</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="feedbacksservice_id"><code>/feedbacks/:service_id/</code></h2>
 <p>Доступные методы:</p>
@@ -552,8 +667,18 @@
 <h2 id="feedbacksdetailid"><code>feedbacks/detail/:id/</code></h2>
 <p>Доступные методы:</p>
 <ul>
-<li>patch - изменить отзыв</li>
-<li>delete - удалить отзыв</li>
+<li>
+<p>patch - изменить отзыв</p>
+<ul>
+<li>Request:<ul>
+<li>text</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>delete - удалить отзыв</p>
+</li>
 </ul>
                 
               
